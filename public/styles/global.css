@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;600;700&display=swap');
+
+body {
+    background-color: #0A192F;
+    margin: 0;
+    padding: 0;
+    direction: rtl
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg,
+            #0A192F 0%,
+            #1e2749 25%,
+            #01292f 50%,
+            #1f385e 100%);
+    animation: AnimateBG 20s ease-in-out infinite;
+}
+
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 0% 25%
+    }
+
+    50% {
+        background-position: 50% 100%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.img-hover-zoom--slowmo {
+    overflow: hidden;
+
+}
+
+.img-hover-zoom--slowmo img {
+    transition: transform 1s, filter 1s ease-in-out;
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+    filter: grayscale(0%);
+    transform: scale(1);
+}
+
+input {
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width: 50%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
