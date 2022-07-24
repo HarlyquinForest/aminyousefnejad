@@ -19,7 +19,7 @@ const Contactme = () => {
                     className="flex flex-col items-center gap-4"
                     onSubmit={SendMessage}
                 >
-                    <p className="w-400 text-center text-light-gray">
+                    <p className="w-full md:w-400 text-center text-light-gray">
                         در حال حاضر آماده دریافت پیشنهادات کاری شما عزیزان هستم
                         در خصوص موضوعات دیگه هم راحت باشید چون در صندوق ورودی من
                         به روی همه بازه .
