@@ -20,7 +20,7 @@ const Section = ({ children, title, image, className, id }) => {
                 </div>
                 <div className="flex flex-col w-full lg:flex-row items-center px-6 lg:items-start justify-between text-light-gray text-right mt-4">
                     {image && (
-                        <div className="img-hover-zoom--slowmo max-w-200 xl:max-w-md order-1 lg:order-2 rounded-lg">
+                        <div className="img-hover-zoom--slowmo max-w-300 xl:max-w-md order-1 lg:order-2 rounded-lg">
                             <img
                                 src={image}
                                 alt="avatar picture"
