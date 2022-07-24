@@ -9,6 +9,7 @@ const Main = ({ children, router }) => {
                     name="viewport"
                     content="width=device-width , initial-scale=1"
                 />
+                <link rel="shortcut icon" href="favicon.ico" />
                 <title>امین یوسف نژاد-صفحه اصلی</title>
             </Head>
             <div className="bg"></div>
