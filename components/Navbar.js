@@ -57,12 +57,12 @@ const Navbar = path => {
                     />
                 ) : (
                     <div className="flex flex-row justify-between w-400 ">
-                        <NavItem title="درباره من" path="#about" />
-                        <NavItem title="بلاگ" path="#blog" />
-                        <NavItem title="رزومه" path="#resume" />
-                        <NavItem title="پروژه ها " path="#work" />
+                        <NavItem title="درباره من" path="/#about" />
+                        <NavItem title="بلاگ" path="/#blog" />
+                        <NavItem title="رزومه" path="https://quera.org/qcv/" />
+                        <NavItem title="پروژه ها " path="/#work" />
                         <span className="">
-                            <a href="#contact">
+                            <a href="/#contact">
                                 <Button
                                     bgColor="primary"
                                     color="primary"
@@ -78,16 +78,16 @@ const Navbar = path => {
                 {activeMenu && (
                     <div className="absolute w-56 left-10 top-14 bg-[#282828] p-3 rounded-md border-1 border-dark-gray text-dark-gray">
                         <div className="flex flex-col divide-y-1 divide-dark-gray">
-                            <NextLink href="#about">
+                            <NextLink href="/#about">
                                 <a className="py-2">درباره من </a>
                             </NextLink>
-                            <NextLink href="#blog">
+                            <NextLink href="/#blog">
                                 <a className="py-2">بلاگ</a>
                             </NextLink>
-                            <NextLink href="#resume">
+                            <NextLink href="https://quera.org/qcv/">
                                 <a className="py-2">رزومه</a>
                             </NextLink>
-                            <NextLink href="#work">
+                            <NextLink href="/#work">
                                 <a className="py-2">پروژه ها</a>
                             </NextLink>
                         </div>
