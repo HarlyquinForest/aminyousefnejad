@@ -15,9 +15,9 @@ const Button = ({
             type={type ? type : 'button'}
             onClick={clickHandler}
             style={{ borderRadius }}
-            className={`text-${size} p-2 w-${width} font-extralight border-1 text-${color} border-${color}`}
+            className={`flex flex-row items-center text-${size} p-2 w-${width} font-extralight border-1 text-${color} border-${color}`}
         >
-            {icon} {text}
+            <span className="ml-2 text-2xl">{icon}</span> {text}
         </button>
     )
 }
