@@ -16,7 +16,7 @@ const Page = () => {
         return () => window.removeEventListener('resize', handleResize)
     }, [])
     useEffect(() => {
-        if (screenSize <= 900) setMobile(true)
+        if (screenSize <= 768) setMobile(true)
         else setMobile(false)
     }, [screenSize])
     return (
