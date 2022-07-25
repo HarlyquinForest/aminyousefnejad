@@ -42,33 +42,6 @@ const SvgComponent = props => (
             />
             <text
                 xmlSpace="preserve"
-                transform="scale(.26458)"
-                style={{
-                    fontStyle: 'normal',
-                    fontWeight: 400,
-                    fontSize: 192,
-                    lineHeight: 1.25,
-                    fontFamily: 'sans-serif',
-                    whiteSpace: 'pre',
-                    shapeInside: 'url(#a)',
-                    fill: '#000',
-                    fillOpacity: 1,
-                    stroke: 'none'
-                }}
-            >
-                <tspan x={238.865} y={686.427}>
-                    <tspan
-                        style={{
-                            fontSize: 96,
-                            fill: '#fff'
-                        }}
-                    >
-                        {'A'}
-                    </tspan>
-                </tspan>
-            </text>
-            <text
-                xmlSpace="preserve"
                 transform="matrix(.26458 0 0 .26458 3.127 .458)"
                 style={{
                     fontStyle: 'normal',
