@@ -9,7 +9,7 @@ import Section, { Paragraph } from './Section'
 import UnivercityLogo from './UnivercityLogo'
 import Contactme from './Contactme'
 import Projects from './Projects'
-
+import { prefix } from '../utils/prefix'
 const Aboutme = () => {
     const control = useAnimation()
     const [ref, inView] = useInView()
@@ -18,7 +18,7 @@ const Aboutme = () => {
     }, [control, inView])
     return (
         <div className="flex flex-col items-center mt-64  md:px-32" id="about">
-            <Section title="درباره من" image="/images/avatar.jpg">
+            <Section title="درباره من" image={`${prefix}/images/avatar.jpg`}>
                 <div className="w-full lg:w-9/12">
                     <Paragraph>
                         من امین یوسف نژاد هستم و از دوران نوجوانی اوقات فراغت
