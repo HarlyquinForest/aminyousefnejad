@@ -17,7 +17,8 @@ const Button = ({
             style={{ borderRadius }}
             className={`flex flex-row items-center text-${size} p-2 w-${width} font-extralight border-1 text-${color} border-${color}`}
         >
-            <span className="ml-2 text-2xl">{icon}</span> {text}
+            {icon && <span className="ml-2 text-2xl">{icon}</span>}
+            {text}
         </button>
     )
 }
