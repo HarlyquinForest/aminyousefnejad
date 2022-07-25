@@ -68,7 +68,6 @@ const BlogPosts = () => {
                 </AnimatePresence>
             ) : (
                 <div className="flex flex-col w-full  items-center ">
-                    <div>Loading posts ... </div>
                     <PropagateLoader color="#12ffa1" />
                 </div>
             )}
