@@ -9,6 +9,7 @@ const Main = ({ children, router }) => {
                     name="viewport"
                     content="width=device-width , initial-scale=1"
                 />
+                <meta name="theme-color" content="#0A192F"></meta>
                 <link rel="shortcut icon" href="favicon.ico" />
                 <title>امین یوسف نژاد-صفحه اصلی</title>
             </Head>
