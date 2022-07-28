@@ -41,8 +41,8 @@ const Projects = () => {
                 tags={['java', 'JavaFx', 'GNU/Linux']}
             />
             <Project
-                title="برنامه نمایش آب و هوا "
-                desc="برنامه ای برای نمایش آب و هوا که بروی سیستم عامل های گنو/لینوکس قابل اجراس "
+                title="شطرنج"
+                desc="بازی محبوب شطرنج که به صورت تجربی با جاوا و سوینگ ساخته شده"
                 link="https://github.com/HarlyquinForest/ChessGame"
                 tags={['java', 'swing']}
             />
@@ -67,7 +67,7 @@ const Project = ({ title, desc, link, tags }) => {
                         <p className="text-light-gray text-justify mt-2">
                             {desc}
                         </p>
-                        <div className="grid grid-cols-3 gap-2 mt-10">
+                        <div className="flex flex-row flex-wrap gap-3 mt-10">
                             {tags &&
                                 tags.map((item, index) => (
                                     <span className="text-center rounded-lg bg-main-bg text-body  text-sm font-bold p-2 w-fit  lg:w-30 ">
