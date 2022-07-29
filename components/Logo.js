@@ -25,9 +25,9 @@ const SvgComponent = props => (
         <g transform="translate(-51.73 -82.965)">
             <circle
                 style={{
-                    fill: '#0a192f',
+                    fill: '#282828',
                     fillOpacity: 1,
-                    stroke: '#12ffa1',
+                    stroke: '#12a1ff',
                     strokeWidth: 2,
                     strokeLinecap: 'round',
                     strokeLinejoin: 'round',
@@ -51,7 +51,7 @@ const SvgComponent = props => (
                     fontFamily: 'sans-serif',
                     whiteSpace: 'pre',
                     shapeInside: 'url(#b)',
-                    fill: '#12ffa1',
+                    fill: '#12a1ff',
                     fillOpacity: 1,
                     stroke: 'none'
                 }}
