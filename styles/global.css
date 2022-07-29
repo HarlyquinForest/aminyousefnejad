@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;600;700&display=swap');
 
 body {
-    background-color: #0A192F;
+    background-color: #282828;
     margin: 0;
     padding: 0;
     direction: rtl
@@ -27,7 +27,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     margin-left: -30px;
     width: auto;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .my-masonry-grid_column>div {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 @keyframes AnimateBG {
