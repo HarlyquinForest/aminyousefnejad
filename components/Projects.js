@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <Masonry
             breakpointCols={breakpointColumnsObj}
-            className="my-masonry-grid gap-2"
+            className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
         >
             <Project
@@ -32,7 +32,7 @@ const Projects = () => {
                 title="8Puzzle solver"
                 desc="الگوریتم های هوش مصنوعی برای حل یه پازل بسیار ساده که توسط جاوا پیاده سازی شده .الگوریتم هایی که در این برنامه برای حل کردن پازل ازشون استفاده کردم عبارت اند از : BFS, A*, RBFS"
                 link="https://github.com/HarlyquinForest/8Puzzle"
-                tags={['java']}
+                tags={['java', 'Artificaial Intelligence']}
             />
             <Project
                 title="برنامه نمایش آب و هوا "
@@ -51,7 +51,10 @@ const Projects = () => {
 }
 const Project = ({ title, desc, link, tags }) => {
     return (
-        <div className="font-body  text-right min-w-200 max-w-400 h-fit bg-half-transparent p-8 rounded-lg hover:-translate-y-1 transition-all cursor-pointer hover:text-primary">
+        <div
+            key={title}
+            className="font-body  text-right min-w-200 max-w-400 h-fit bg-half-transparent p-8 rounded-lg hover:-translate-y-1 transition-all cursor-pointer hover:text-primary"
+        >
             <NextLink href={link}>
                 <a target="_blank" className="w-full">
                     <div className="flex flex-col">
