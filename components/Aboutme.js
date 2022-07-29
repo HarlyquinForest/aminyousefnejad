@@ -17,9 +17,16 @@ const Aboutme = () => {
         if (inView) control.start('visible')
     }, [control, inView])
     return (
-        <div className="flex flex-col items-center mt-64  md:px-32" id="about">
-            <Section title="درباره من" image={`${prefix}/images/avatar.jpg`}>
-                <div className="w-full lg:w-9/12">
+        <div
+            className="flex flex-col items-center mt-64 px-0 gap-24 md:px-32"
+            id="about"
+        >
+            <Section
+                title="درباره من"
+                image={`${prefix}/images/avatar.jpg`}
+                className="w-full lg:w-9/12"
+            >
+                <div className="w-full lg:w-11/12">
                     <Paragraph>
                         من امین یوسف نژاد هستم و از دوران نوجوانی اوقات فراغت
                         خودمو با دنیای کامپیوتر و برنامه نویسی سپری کردم. مقطع
@@ -53,7 +60,10 @@ const Aboutme = () => {
                 </div>
             </Section>
             <div className="flex flex-col items-center lg:items-start lg:flex-row w-full lg:w-9/12">
-                <Section title="مهارت های تخصصی" className="h-3/4">
+                <Section
+                    title="مهارت های تخصصی"
+                    className="w-11/12 lg:w-9/12 h-3/4"
+                >
                     <ProgressBarContainer>
                         <ProgressBar
                             progress="90%"
@@ -93,7 +103,10 @@ const Aboutme = () => {
                         />
                     </ProgressBarContainer>
                 </Section>
-                <Section title="مهارت های نرم" className="h-3/4">
+                <Section
+                    title="مهارت های نرم"
+                    className="w-11/12 lg:w-9/12 h-3/4"
+                >
                     <RatingContainer>
                         <Rating
                             score={5}
@@ -161,8 +174,8 @@ const Aboutme = () => {
                     </RatingContainer>
                 </Section>
             </div>
-            <Section title="سوابق تحصیلی" className="mt-24 ">
-                <div className="flex flex-col max-w-md lg:flex-row  items-center">
+            <Section title="سوابق تحصیلی" className="w-full xl:w-10/12 mt-24 ">
+                <div className="flex flex-col max-w-md xl:flex-row  items-center">
                     <div className="flex flex-col min-w-full items-center m-3 gap-3 bg-half-transparent p-3 py-8 rounded-lg cursor-pointer hover:scale-105 transition-all">
                         <div className="flex flex-col items-center">
                             <UnivercityLogo
@@ -199,10 +212,10 @@ const Aboutme = () => {
                     </div>
                 </div>
             </Section>
-            <Section title="مطالب اخیر" id="blog">
+            <Section title="مطالب اخیر" id="blog" className="w-full lg:w-9/12">
                 <BlogPosts />
             </Section>
-            <Section title="پروژه ها" id="work">
+            <Section title="پروژه ها" id="work" className="w-fulllg:w-11/12">
                 <Projects />
             </Section>
             <Contactme />
