@@ -21,7 +21,7 @@ const Intro = () => {
                         </p>
                     </AnimatedDiv>
                     <AnimatedDiv delay={0.5}>
-                        <p className="text-dark-gray text-xl font-body mt-10 pl-14 lg:w-9/12 text-justify opacity-80">
+                        <p className="text-dark-gray text-xl font-body mt-10 pl-14 w-full lg:w-6/12 text-justify opacity-80">
                             از نوشتن ابزار های کوچیک که باعث میشه انجام دادن یه
                             کار آسون بشه تا نرم افزار های بسیار پیچیده بخش بزرگی
                             از علایق من در زندگی هست. در حال حاضر به صورت فری
