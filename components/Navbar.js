@@ -1,10 +1,11 @@
 import NextLink from 'next/link'
 import Button from './Button'
 import Logo from './Logo'
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import { useStateContext } from '../context/ContextProvider'
 import useScroll from '../lib/useScroll'
+import { AnimatePresence, motion } from 'framer-motion'
 const NavItem = ({ title, path }) => {
     return (
         <NextLink href={path} key={title}>
@@ -49,7 +50,9 @@ const Navbar = path => {
             <div className="flex flex-row justify-between items-center">
                 {mobile ? (
                     <Button
-                        icon={<AiOutlineMenu />}
+                        icon={
+                            activeMenu ? <AiOutlineClose /> : <AiOutlineMenu />
+                        }
                         bgColor="transparent"
                         color="primary"
                         borderRadius="5px"
@@ -76,22 +79,34 @@ const Navbar = path => {
                     </div>
                 )}
                 {activeMenu && (
-                    <div className="absolute w-56 left-10 top-14 bg-[#282828] p-3 rounded-md border-1 border-dark-gray text-dark-gray">
-                        <div className="flex flex-col divide-y-1 divide-dark-gray">
-                            <NextLink href="/#about">
-                                <a className="py-2">درباره من </a>
-                            </NextLink>
-                            <NextLink href="/#blog">
-                                <a className="py-2">بلاگ</a>
-                            </NextLink>
-                            <NextLink href="https://quera.org/qcv/">
-                                <a className="py-2">رزومه</a>
-                            </NextLink>
-                            <NextLink href="/#work">
-                                <a className="py-2">پروژه ها</a>
-                            </NextLink>
+                    <AnimatePresence>
+                        <div className="absolute w-full h-screen left-0 top-20 bg-[#282828] p-3 text-dark-gray">
+                            <motion.div
+                                initial={{ width: 0, x: -1, opacity: 0 }}
+                                animate={{
+                                    width: '100%',
+                                    x: 0,
+                                    opacity: 1,
+                                    transition: 0.5
+                                }}
+                            >
+                                <div className="flex flex-col divide-y-1 divide-dark-gray">
+                                    <NextLink href="/#about">
+                                        <a className="py-2">درباره من </a>
+                                    </NextLink>
+                                    <NextLink href="/#blog">
+                                        <a className="py-2">بلاگ</a>
+                                    </NextLink>
+                                    <NextLink href="https://quera.org/qcv/">
+                                        <a className="py-2">رزومه</a>
+                                    </NextLink>
+                                    <NextLink href="/#work">
+                                        <a className="py-2">پروژه ها</a>
+                                    </NextLink>
+                                </div>
+                            </motion.div>
                         </div>
-                    </div>
+                    </AnimatePresence>
                 )}
             </div>
         </div>
