@@ -15,10 +15,10 @@ const Button = ({
             type={type ? type : 'button'}
             onClick={clickHandler}
             style={{ borderRadius }}
-            className={`flex flex-row items-center text-${size} p-2 w-${width} font-extralight border-1 text-${color} border-primary`}
+            className={`flex flex-row items-center text-${size} p-2 w-${width} font-light border-1 text-${color} border-primary hover:bg-primary hover:text-light-gray hover:translate-y-1 transition-all`}
         >
-            {icon && <span className="ml-2 text-2xl">{icon}</span>}
-            {text}
+            {icon && <span className="text-2xl">{icon}</span>}
+            {text && text}
         </button>
     )
 }
