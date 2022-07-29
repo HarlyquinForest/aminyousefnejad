@@ -17,17 +17,15 @@ module.exports = {
                 14: '14px'
             },
             backgroundColor: {
-                'main-bg': '#0A192F',
-                'secondary-dark-bg': '#222E47',
-                'half-transparent': 'rgba(0, 0, 0, 0.3)'
+                'main-bg': '#282828',
+                'secondary-dark-bg': '#2a2a2a',
+                'half-transparent': 'rgba(0, 0, 0, 0.2)'
             },
             colors: {
-                primary: '#12ffa1 ',
-                'primary-2': '#00e851',
-                'primary-3': '#11ff12',
+                primary: '#12a1ff ',
                 secondary: '#ffa112',
                 'light-gray': '#e3fff4',
-                'dark-gray': '#b0b0ba'
+                'dark-gray': '#a0a0a0'
             },
             borderWidth: {
                 1: '1px'
@@ -60,7 +58,8 @@ module.exports = {
                 400: '400px'
             },
             height: {
-                80: '80px'
+                80: '80px',
+                100: '100vh'
             },
             minHeight: {
                 200: '200px',
