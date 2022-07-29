@@ -9,11 +9,11 @@ const Main = ({ children, router }) => {
                     name="viewport"
                     content="width=device-width , initial-scale=1"
                 />
-                <meta name="theme-color" content="#0A192F"></meta>
+                <meta name="theme-color" content="#282828"></meta>
                 <link rel="shortcut icon" href="favicon.ico" />
                 <title>امین یوسف نژاد-صفحه اصلی</title>
             </Head>
-            <div className="bg"></div>
+            <div className="bg-main-bg"></div>
             <Navbar path={router.asPath} />
             {children}
             <Footer />
