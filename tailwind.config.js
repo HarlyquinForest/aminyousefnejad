@@ -10,7 +10,8 @@ module.exports = {
         fontFamily: {
             display: ['Open Sans', 'sans-serif'],
             body: ['Vazirmatn FD', 'sans-serif'],
-            nav: ['monoscape', 'sans-serif']
+            nav: ['monoscape', 'sans-serif'],
+            dancing: ['Leckerli One', 'sans-serif']
         },
         extend: {
             fontSize: {
