@@ -80,17 +80,13 @@ const Navbar = path => {
                 )}
                 {activeMenu && (
                     <AnimatePresence>
-                        <div className="absolute w-full h-screen left-0 top-20 bg-[#282828] p-3 text-dark-gray">
-                            <motion.div
-                                initial={{ width: 0, x: -1, opacity: 0 }}
-                                animate={{
-                                    width: '100%',
-                                    x: 0,
-                                    opacity: 1,
-                                    transition: 0.5
-                                }}
-                            >
-                                <div className="flex flex-col divide-y-1 divide-dark-gray">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <div className="fixed w-full h-64 right-0 top-20 bg-secondary-dark-bg p-3 border-b-1 text-dark-gray">
+                                <div className="flex flex-col text-2xl gap-4">
                                     <NextLink href="/#about">
                                         <a className="py-2">درباره من </a>
                                     </NextLink>
@@ -104,8 +100,8 @@ const Navbar = path => {
                                         <a className="py-2">پروژه ها</a>
                                     </NextLink>
                                 </div>
-                            </motion.div>
-                        </div>
+                            </div>
+                        </motion.div>
                     </AnimatePresence>
                 )}
             </div>
