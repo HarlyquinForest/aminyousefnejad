@@ -13,7 +13,7 @@ const Contactme = () => {
         window.location = mail
     }
     return (
-        <Section title="تماس با من" className="w-full items-center">
+        <Section title="تماس با من" className="w-full lg:w-8/12 items-center">
             <div id="contact">
                 <form
                     className="flex flex-col items-center gap-4"
