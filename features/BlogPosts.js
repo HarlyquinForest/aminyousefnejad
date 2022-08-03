@@ -4,7 +4,7 @@ import { useStateContext } from '../context/ContextProvider'
 import { PropagateLoader } from 'react-spinners'
 import wp from '../lib/wp'
 import { AnimatePresence } from 'framer-motion'
-import AnimatedDiv from './AnimatedDiv'
+import AnimatedDiv from '../components/AnimatedDiv'
 
 async function fetchPosts() {
     try {

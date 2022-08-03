@@ -1,20 +1,12 @@
 import NextLink from 'next/link'
-import Button from './Button'
-import Logo from './Logo'
+import Button from '../components/Button'
+import Logo from '../components/Logo'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import { useStateContext } from '../context/ContextProvider'
 import useScroll from '../lib/useScroll'
 import { AnimatePresence, motion } from 'framer-motion'
-const NavItem = ({ title, path }) => {
-    return (
-        <NextLink href={path} key={title}>
-            <a className="text-light-gray p-2 font-ligth hover:text-primary hover:underline underline-offset-8 inline-block">
-                {title}
-            </a>
-        </NextLink>
-    )
-}
+import NavItem from '../components/NavItem'
 const styles = {
     active: {
         visibility: 'visible',

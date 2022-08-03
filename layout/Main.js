@@ -1,6 +1,6 @@
-import Navbar from '../Navbar'
+import Navbar from '../features/Navbar'
 import Head from 'next/head'
-import Footer from '../Footer'
+import Footer from '../features/Footer'
 import { AnimatePresence, motion } from 'framer-motion'
 const Main = ({ children, router, animate, ready }) => {
     const variants = {

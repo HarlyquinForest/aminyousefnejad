@@ -1,8 +1,8 @@
 import { ContextProvider } from '../context/ContextProvider'
 import '../public/styles/global.css'
-import Layout from '../components/layout/Main'
+import Layout from '../layout/Main'
 import { useEffect, useState } from 'react'
-import Landing from '../components/Landing'
+import Landing from '../features/Landing'
 import { useAnimation } from 'framer-motion'
 
 function MyApp({ Component, pageProps, router }) {
