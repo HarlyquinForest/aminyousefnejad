@@ -1,7 +1,18 @@
 import Navbar from '../Navbar'
 import Head from 'next/head'
 import Footer from '../Footer'
-const Main = ({ children, router }) => {
+import { AnimatePresence, motion } from 'framer-motion'
+const Main = ({ children, router, animate, ready }) => {
+    const variants = {
+        visible: {
+            y: 0,
+            opacity: 1,
+            display: 'block',
+            transition: { duration: 0.5 }
+        },
+        hidden: { y: 5, opacity: 0, display: 'none' }
+    }
+
     return (
         <>
             <Head>
@@ -13,10 +24,18 @@ const Main = ({ children, router }) => {
                 <link rel="shortcut icon" href="favicon.ico" />
                 <title>امین یوسف نژاد-صفحه اصلی</title>
             </Head>
-            <div className="bg-main-bg"></div>
-            <Navbar path={router.asPath} />
-            {children}
-            <Footer />
+            <AnimatePresence>
+                <motion.div
+                    variants={variants}
+                    initial="hidden"
+                    animate={animate}
+                >
+                    <div className="bg-main-bg"></div>
+                    {ready && <Navbar path={router.asPath} />}
+                    {children}
+                    <Footer />
+                </motion.div>
+            </AnimatePresence>
         </>
     )
 }
