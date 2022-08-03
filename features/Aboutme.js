@@ -224,7 +224,7 @@ const Aboutme = () => {
             <Section title="مطالب اخیر" id="blog" className="w-11/12">
                 <BlogPosts />
             </Section>
-            <Section title="پروژه ها" id="work">
+            <Section title="پروژه ها" id="work" className="w-11/12">
                 <Projects />
             </Section>
             <Contactme />
