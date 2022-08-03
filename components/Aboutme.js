@@ -1,4 +1,4 @@
-import { animate, useAnimation } from 'framer-motion'
+import { useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 import BlogPosts from './BlogPosts'
