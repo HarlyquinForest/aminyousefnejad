@@ -2,7 +2,7 @@ import { GoPrimitiveDot } from 'react-icons/go'
 import { AnimatePresence } from 'framer-motion'
 import { motion } from 'framer-motion'
 
-const Section = ({ children, title, image, className, id }) => {
+const Section = ({ children, title, className, id }) => {
     return (
         <AnimatePresence>
             <div className={`flex flex-col mx-2 p-4 ${className}`} id={id}>
@@ -15,19 +15,9 @@ const Section = ({ children, title, image, className, id }) => {
                     </h1>
                     <div className="h-0 border-t-1 w-full border-dark-gray mr-4"></div>
                 </div>
-                <div className="flex flex-col w-full lg:flex-row items-center px-6 lg:items-start justify-between text-light-gray text-right mt-4">
-                    {image && (
-                        <div className="img-hover-zoom--slowmo max-w-200 xl:max-w-xs order-1 lg:order-2 rounded-lg mt-6">
-                            <img
-                                src={image}
-                                alt="avatar picture"
-                                className="drop-shadow-xl transition-all delay-200 cursor-none "
-                            />
-                        </div>
-                    )}
-                    <div className="mt-6 font-body w-full  order-2 lg:order-1 ">
-                        {children}
-                    </div>
+
+                <div className="text-light-gray mt-6 font-body w-full  order-2 lg:order-1 ">
+                    {children}
                 </div>
             </div>
         </AnimatePresence>
