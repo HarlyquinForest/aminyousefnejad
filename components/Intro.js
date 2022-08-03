@@ -1,6 +1,6 @@
-import Button from '../components/Button'
+import Button from './Button'
 import { AnimatePresence } from 'framer-motion'
-import AnimatedDiv from '../components/AnimatedDiv'
+import AnimatedDiv from './AnimatedDiv'
 const Intro = () => {
     return (
         <AnimatePresence>

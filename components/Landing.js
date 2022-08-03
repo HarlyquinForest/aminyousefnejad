@@ -1,4 +1,4 @@
-import Hello from '../components/hello'
+import Hello from './hello'
 import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 const Landing = ({ animate, view }) => {

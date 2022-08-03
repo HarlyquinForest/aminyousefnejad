@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Aboutme from '../features/Aboutme'
-import Footer from '../features/Footer'
-import Intro from '../features/Intro'
-import Navbar from '../features/Navbar'
+import Aboutme from '../components/Aboutme'
+import Footer from '../components/Footer'
+import Intro from '../components/Intro'
+import Navbar from '../components/Navbar'
 import SocialLinks from '../components/SocialLinks'
 import { useStateContext } from '../context/ContextProvider'
 const Page = () => {
