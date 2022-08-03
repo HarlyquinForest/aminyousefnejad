@@ -31,7 +31,15 @@ const Main = ({ children, router, animate, ready }) => {
                     animate={animate}
                 >
                     <div className="bg-main-bg"></div>
-                    {ready && <Navbar path={router.asPath} />}
+                    {ready && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <Navbar path={router.asPath} />
+                        </motion.div>
+                    )}
                     {children}
                     <Footer />
                 </motion.div>
