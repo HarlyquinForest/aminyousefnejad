@@ -4,7 +4,7 @@ import Logo from '../components/Logo'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useEffect, useState } from 'react'
 import { useStateContext } from '../context/ContextProvider'
-import useScroll from '../lib/useScroll'
+import useScroll from '../hooks/useScroll'
 import { AnimatePresence, motion } from 'framer-motion'
 import NavItem from '../components/NavItem'
 const styles = {
