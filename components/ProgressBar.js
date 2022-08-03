@@ -55,8 +55,6 @@ const ProgressBar = ({ progress, label, animate, view }) => {
     )
 }
 export const ProgressBarContainer = ({ children }) => {
-    return (
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-6">{children}</div>
-    )
+    return <div className="flex flex-col gap-6">{children}</div>
 }
 export default ProgressBar

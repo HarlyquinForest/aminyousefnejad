@@ -38,7 +38,7 @@ const Rating = ({ score, label, delay, animate, view }) => {
                 ref={view}
                 transition={{ transition: 0.2, delay }}
             >
-                <p className="text-light-gray text-sm lg:text-lg">{label}</p>
+                <p className="text-light-gray text-lg">{label}</p>
                 <div className="flex  flex-row-reverse gap-1">{stars}</div>
             </motion.div>
         </div>
