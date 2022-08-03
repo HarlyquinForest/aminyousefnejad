@@ -108,6 +108,12 @@ textarea {
     z-index: 100;
 }
 
+@media screen and (max-width:700px) {
+    #container {
+        width: 80%;
+    }
+}
+
 #container.fin .path-1,
 #container.fin .path-2,
 #container.fin .path-3 {
