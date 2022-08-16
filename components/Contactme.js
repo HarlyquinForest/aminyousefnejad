@@ -16,10 +16,10 @@ const Contactme = () => {
         <Section title="تماس با من" className="w-full lg:w-8/12 items-center">
             <div id="contact">
                 <form
-                    className="flex flex-col items-center gap-4"
+                    className="flex flex-col items-start gap-4"
                     onSubmit={SendMessage}
                 >
-                    <p className="w-full md:w-400 text-center text-light-gray">
+                    <p className="w-full md:w-400 text-justify text-light-gray">
                         در حال حاضر آماده دریافت پیشنهادات کاری شما عزیزان هستم
                         در خصوص موضوعات دیگه هم راحت باشید چون در صندوق ورودی من
                         به روی همه بازه .
