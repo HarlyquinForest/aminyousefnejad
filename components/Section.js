@@ -13,7 +13,7 @@ const Section = ({ children, title, className, id }) => {
                     <h1 className=" text-light-gray  text-xl lg:text-2xl font-body w-max min-w-fit">
                         {title}
                     </h1>
-                    <div className="h-0 border-t-1 w-full border-dark-gray mr-4"></div>
+                    <div className="h-0 border-t-1 w-200 border-dark-gray mr-4"></div>
                 </div>
 
                 <div className="text-light-gray mt-6 font-body w-full  order-2 lg:order-1 ">
