@@ -4,7 +4,7 @@ import AnimatedDiv from './AnimatedDiv'
 const Intro = () => {
     return (
         <AnimatePresence>
-            <div className="flex justify-start items-center px-8 md:px-32 my-48">
+            <div className="flex justify-start items-center px-8 md:px-32 my-48 ">
                 <div className="text-right">
                     <AnimatedDiv delay={0.3}>
                         <p className="text-primary text-lg font-body">
@@ -17,7 +17,7 @@ const Intro = () => {
                             </span>
                         </p>
                         <p className="text-dark-gray text-2xl md:text-4xl font-body mt-10">
-                            من طراح و توسعه دهنده فرانت-اند هستم.{' '}
+                            من طراح و توسعه دهنده وب هستم.{' '}
                         </p>
                     </AnimatedDiv>
                     <AnimatedDiv delay={0.5}>
