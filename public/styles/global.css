@@ -29,8 +29,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 0.5rem;
-    margin-left: -30px;
     width: auto;
+    max-width: 1200px;
 }
 
 .my-masonry-grid_column {
