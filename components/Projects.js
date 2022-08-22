@@ -73,7 +73,10 @@ const Project = ({ title, desc, link, tags }) => {
                         <div className="flex flex-row flex-wrap gap-3 mt-10">
                             {tags &&
                                 tags.map((item, index) => (
-                                    <span className="text-center rounded-lg bg-main-bg text-body  text-sm font-bold p-2 w-fit  lg:w-30 ">
+                                    <span
+                                        key={index}
+                                        className="text-center rounded-lg bg-main-bg text-body  text-sm font-bold p-2 w-fit  lg:w-30 "
+                                    >
                                         {item}
                                     </span>
                                 ))}
