@@ -1,7 +1,7 @@
 import Hello from './hello'
 import { useEffect } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-const Landing = ({ animate, view }) => {
+import { motion } from 'framer-motion'
+const Landing = () => {
     useEffect(() => {
         const addClass = () =>
             (document.getElementById('container').className = 'fin')
@@ -9,16 +9,19 @@ const Landing = ({ animate, view }) => {
     }, [])
     const variants = {
         visible: { opacity: 1 },
-        hidden: { opacity: 0, transition: { duration: 1 } }
+        hidden: { opacity: 0, transition: { duration: 0.5 } }
     }
     return (
-        <AnimatePresence>
-            <motion.div variants={variants} initial="visible" animate={animate}>
-                <div id="container">
-                    <Hello />
-                </div>
-            </motion.div>
-        </AnimatePresence>
+        <motion.div
+            key="landing-page"
+            variants={variants}
+            initial="visible"
+            exit="hidden"
+        >
+            <div id="container">
+                <Hello />
+            </div>
+        </motion.div>
     )
 }
 export default Landing
