@@ -5,6 +5,7 @@ import { PropagateLoader } from 'react-spinners'
 import wp from '../lib/wp'
 import { AnimatePresence } from 'framer-motion'
 import AnimatedDiv from './AnimatedDiv'
+import { getValue, getImage } from '../utils/helpers'
 
 async function fetchPosts() {
     try {
@@ -57,10 +58,15 @@ const BlogPosts = () => {
                             {POSTS.current.map((item, index) => (
                                 <Post
                                     key={index}
-                                    title={item.title.rendered}
-                                    image={item.yoast_head_json.og_image[0].url}
-                                    link={item.link}
-                                    date={item.date}
+                                    title={getValue(
+                                        item.title.rendered,
+                                        'No title'
+                                    )}
+                                    image={getImage(
+                                        item.yoast_head_json.og_image[0].url
+                                    )}
+                                    link={getValue(item.link, '/')}
+                                    date={getValue(item.date, 'Today')}
                                 />
                             ))}
                         </AnimatedDiv>
