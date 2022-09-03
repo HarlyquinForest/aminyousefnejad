@@ -1,9 +1,9 @@
-import Navbar from '../Navbar'
+import Navbar from '../modules/Navbar'
 import Head from 'next/head'
-import Footer from '../Footer'
+import Footer from '../modules/Footer'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
-import Landing from '../Landing'
+import Landing from '../modules/Landing'
 const Main = ({ children, router }) => {
     const [loading, setLoading] = useState(true)
     const [ready, setReady] = useState(false)

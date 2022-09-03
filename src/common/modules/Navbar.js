@@ -1,10 +1,10 @@
 import NextLink from 'next/link'
-import Button from './Button'
-import Logo from './Logo'
+import Button from '../components/Button'
+import Logo from '../components/Logo'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useEffect, useState } from 'react'
-import { useStateContext } from '../context/ContextProvider'
-import useScroll from '../lib/useScroll'
+import { useStateContext } from '../../ContextProvider'
+import useScroll from '../hooks/useScroll'
 import { AnimatePresence, motion } from 'framer-motion'
 const NavItem = ({ title, path }) => {
     return (

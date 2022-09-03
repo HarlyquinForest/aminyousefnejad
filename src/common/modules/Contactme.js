@@ -1,5 +1,5 @@
-import Button from './Button'
-import Section from './Section'
+import Button from '../components/Button'
+import Section from '../components/Section'
 
 const Contactme = () => {
     const SendMessage = e => {

@@ -2,7 +2,7 @@ import NextLink from 'next/link'
 import { VscGithubAlt } from 'react-icons/vsc'
 import { AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai'
 import { FaTelegramPlane } from 'react-icons/fa'
-import { useStateContext } from '../context/ContextProvider'
+import { useStateContext } from '../../ContextProvider'
 const SocialLinks = () => {
     const { mobile } = useStateContext()
     return (

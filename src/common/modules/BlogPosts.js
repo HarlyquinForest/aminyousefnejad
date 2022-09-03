@@ -1,10 +1,10 @@
 import { Suspense, useEffect, useRef, useState } from 'react'
 import NextLink from 'next/link'
-import { useStateContext } from '../context/ContextProvider'
+import { useStateContext } from '../../ContextProvider'
 import { PropagateLoader } from 'react-spinners'
-import wp from '../lib/wp'
+import wp from '../utils/wp'
 import { AnimatePresence } from 'framer-motion'
-import AnimatedDiv from './AnimatedDiv'
+import AnimatedDiv from '../components/AnimatedDiv'
 import { getValue, getImage } from '../utils/helpers'
 
 async function fetchPosts() {
@@ -91,7 +91,7 @@ const Post = ({ image, title, link, date }) => {
                         src={image}
                         loading="lazy"
                     />
-                    <h2 className="text-dark-gray px-3 hover:text-primary hover:underline">
+                    <h2 className="text-dark-gray text-lg px-3 hover:text-primary hover:underline">
                         {title}
                     </h2>
                     <p className="p-3 text-sm text-slate-600">{date}</p>

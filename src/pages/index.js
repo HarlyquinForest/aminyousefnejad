@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import Aboutme from '../components/Aboutme'
-import Footer from '../components/Footer'
-import Intro from '../components/Intro'
-import Navbar from '../components/Navbar'
-import SocialLinks from '../components/SocialLinks'
-import { useStateContext } from '../context/ContextProvider'
+import Aboutme from '../common/modules/Aboutme'
+import Footer from '../common/modules/Footer'
+import Intro from '../common/modules/Intro'
+import Navbar from '../common/modules/Navbar'
+import SocialLinks from '../common/modules/SocialLinks'
+import { useStateContext } from '../ContextProvider'
 const Page = () => {
     const { mobile, setMobile, screenSize, setScreenSize } = useStateContext()
     const handleResize = () => setScreenSize(window.innerWidth)

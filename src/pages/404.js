@@ -1,6 +1,6 @@
 import { TbError404 } from 'react-icons/tb'
 import { AiOutlineHome } from 'react-icons/ai'
-import Button from '../components/Button'
+import Button from '../common/components/Button'
 const NotFound = () => {
     return (
         <div className="flex flex-row items-center justify-center h-full w-full mt-64 ">
