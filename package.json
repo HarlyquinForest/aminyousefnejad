@@ -7,7 +7,8 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "build-static": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "prettier" : "prettier --write ./src"
   },
   "author": "aminyousefnejad28@gmail.com",
   "license": "GPL-3.0",
@@ -16,6 +17,7 @@
     "framer-motion": "^6.5.1",
     "next": "^12.2.2",
     "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
