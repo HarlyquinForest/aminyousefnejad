@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react'
 import { useStateContext } from '../../ContextProvider'
 import useScroll from '../hooks/useScroll'
 import { AnimatePresence, motion } from 'framer-motion'
+import { prefix } from '../utils/prefix'
+
 const NavItem = ({ title, path }) => {
   return (
     <NextLink href={path} key={title}>
@@ -74,7 +76,7 @@ const Navbar = path => {
           <div className="flex flex-row justify-between w-400 ">
             <NavItem title="درباره من" path="/#about" />
             <NavItem title="بلاگ" path="/#blog" />
-            <NavItem title="رزومه" path="https://quera.org/qcv/" />
+            <NavItem title="رزومه" path={`${prefix}/amin-yousefnejad.pdf`} />
             <NavItem title="پروژه ها " path="/#work" />
             <span className="">
               <a href="/#contact">
@@ -105,7 +107,7 @@ const Navbar = path => {
                   <NextLink href="/#blog">
                     <a className="py-2">بلاگ</a>
                   </NextLink>
-                  <NextLink href="https://quera.org/qcv/">
+                  <NextLink href={`${prefix}/amin-yousefnejad.pdf`}>
                     <a className="py-2">رزومه</a>
                   </NextLink>
                   <NextLink href="/#work">
